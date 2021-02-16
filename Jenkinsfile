@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerId') {
+    docker.withRegistry('https://registry.hub.docker.com', 'DockerId') {
 
         def customImage = docker.build("ankimittal/add")
 
